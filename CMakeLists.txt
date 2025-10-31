@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.29)
 
-project(project_name_here)
-set(APP_NAME app_name_here)
+project(arg_workshop)
+set(APP_NAME arg_workshop)
 
 # cmake scripts are kept in the cmake directory
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
@@ -21,7 +21,7 @@ if(MSVC)
 endif()
 
 # add source files to executable
-add_executable(${APP_NAME} src/main.cpp)
+add_executable(${APP_NAME} src/example0.cpp)
 
 # add allolib to project & link
 add_subdirectory(allolib)
