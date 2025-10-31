@@ -28,11 +28,11 @@ add_subdirectory(allolib)
 target_link_libraries(${APP_NAME} PRIVATE alapp)
 
 # add al_ext to project & link
-if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/al_ext)
-  add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/al_ext)
-  get_target_property(AL_EXT_LIBRARIES al_ext AL_EXT_LIBRARIES)
-  target_link_libraries(${APP_NAME} PRIVATE ${AL_EXT_LIBRARIES})
-endif()
+# if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/al_ext)
+# add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/al_ext)
+# get_target_property(AL_EXT_LIBRARIES al_ext AL_EXT_LIBRARIES)
+# target_link_libraries(${APP_NAME} PRIVATE ${AL_EXT_LIBRARIES})
+# endif()
 
 # example line for find_package usage
 # find_package(Qt5Core REQUIRED CONFIG PATHS "C:/Qt/5.12.0/msvc2017_64/lib" NO_DEFAULT_PATH)
